@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/style.min.css">
+   <meta name="description" content="LiteBox template for SPA development">
+   <title>LiteBox SPA Development Server</title>
+</head>
+
+<body>
+   <div id="root" class="wrapper">
+      <header class="header">
+   <div class="header__container container">
+      <div class="header__inner">
+         <div class="header__side header__side--left">
+            <div class="header__logo logo">
+               <a class="logo__link" href="#">
+                  <!-- <img class="logo__image" src="" alt="logo-type"> -->
+                  <span>Книгочей</span>
+               </a>
+            </div>
+            <div class="header__contacts contacts">
+               <ul class="contacts__items">
+                  <li class="contacts__item">
+                     <a class="contacts__link" href="tel:89676671331">
+                        <img class="contacts__image" src="./assets/images/contacts/tel.svg" alt="phone number icon">
+                        <span class="contacts__label">+89676671331</span>
+                     </a>
+                  </li>  
+                  <li class="contacts__item">
+                     <a class="contacts__link" href="mailto:knigochey.ru@gmail.com">
+                        <img class="contacts__image" src="./assets/images/contacts/email.svg" alt="phone number icon">
+                        <span class="contacts__label">knigochey.ru@gmail.com</span>
+                     </a>
+                  </li>                 
+               </ul>             
+            </div>
+         </div>
+         <div class="header__side header__side--center">
+            <div class="header__social social">
+               <ul class="social__items">
+                  <li class="social__item">
+                     <a class="social__link" href="#">
+                        <img class="social__image" src="./assets/images/social/instagram.svg" alt="instagram social link">
+                        <span class="social__label">Instagram</span>
+                     </a>
+                  </li>   
+                  <li class="social__item">
+                     <a class="social__link" href="#">
+                        <img class="social__image" src="./assets/images/social/vkontakte.svg" alt="vkontakte social link">
+                        <span class="social__label">Vkontakte</span>
+                     </a>
+                  </li>                
+               </ul>             
+            </div>
+         </div>
+         <div class="header__side header__side--right">
+            <button class="header__menu-icon menu-icon">
+               <span></span>
+            </button>
+            <div class="header__navigation navigation">
+               <nav class="navigation__list navigation-list">
+                  <ul class="navigation-list__items">
+                     <li class="navigation-list__item navigation-list__item--dropdown">
+                        <span class="navigation-list__link navigation-list__link--sub">О нас</span>      
+                        <ul class="navigation-list__sub-items">
+                           <li class="navigation-list__sub-item">
+                              <a class="navigation-list__sub-link" href="#about">О нас</a>  
+                           </li>
+                           <li class="navigation-list__sub-item">
+                              <a class="navigation-list__sub-link" href="#features">Преимущества</a>  
+                           </li>
+                           <li class="navigation-list__sub-item">
+                              <a class="navigation-list__sub-link" href="#numeral">Цифры</a>  
+                           </li>
+                           <li class="navigation-list__sub-item">
+                              <a class="navigation-list__sub-link" href="#questions">Вопрос - ответ</a>  
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#courses">Услуги</a>                       
+                     </li> 
+                     <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#form">Обратная связь</a>                       
+                     </li>                    
+                  </ul>
+               </nav>
+               <div class="navigation__contacts contacts">
+                  <ul class="contacts__items">
+                     <li class="contacts__item">
+                        <a class="contacts__link" href="tel:89676671331">
+                           <img class="contacts__image" src="./assets/images/contacts/tel.svg" alt="phone number icon">
+                           <span class="contacts__label">+89676671331</span>
+                        </a>
+                     </li>  
+                     <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:knigochey.ru@gmail.com">
+                           <img class="contacts__image" src="./assets/images/contacts/email.svg" alt="phone number icon">
+                           <span class="contacts__label">knigochey.ru@gmail.com</span>
+                        </a>
+                     </li>                 
+                  </ul>             
+               </div>
+               <div class="navigation__social social">
+                  <ul class="social__items">
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__image" src="./assets/images/social/instagram.svg" alt="instagram social link">
+                           <span class="social__label">Instagram</span>
+                        </a>
+                     </li>   
+                     <li class="social__item">
+                        <a class="social__link" href="#">
+                           <img class="social__image" src="./assets/images/social/vkontakte.svg" alt="vkontakte social link">
+                           <span class="social__label">Vkontakte</span>
+                        </a>
+                     </li>                
+                  </ul>             
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> 
+</header>
+      <main class="page">
+         <section class="section page__welcome welcome">
+   <picture class="welcome__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="welcome__container container">
+      <div class="welcome__inner">
+         <div class="welcome__content">
+            <div class="welcome__info-message">
+               <div class="welcome__title welcome-title title">
+                  <h1 class="welcome-title__main title__main">
+                     Детский клуб "Книгочей"
+                  </h1>
+                  <p class="welcome-title__sub title__sub">
+                     Прививаем любовь к чтению в игровой форме с раннего возраста,
+                     Помогаем развивать критическое мышление
+                  </p>
+               </div>
+               <button class="welcome__sign-up-course" data-popap-openclick="sign-up-course">
+                  Записаться на бесплатный урок
+               </button>
+            </div>
+            <picture class="welcome__image">
+               <source data-srcset="./assets/images/logo/logo.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+               <img data-src="./assets/images/logo/logo.png" src="./assets/images/other/plug.png" alt="">
+            </picture>
+         </div>
+      </div>
+   </div>
+</section>
+         <section class="section page__about about" id="about">
+   <picture class="about__cover cover">
+      <source data-srcset='./assets/images/cover/layer.webp' srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="about__container container">
+      <div class="about__inner">
+         <div class="about__content">
+            <div class="about__title title">
+               <h6 class="title__item">Книгочей</h6>
+               <h2 class="title__main">О нас</h2>
+               <h6 class="title__sub">Наш клуб создан для того, чтобы привить детям любовь к чтению, ведь чтение - это фундамент детского восприятия картины мира. Самый оптимальный возраст для того, чтобы дети полюбили чтение- 4-9 лет. У нас ребятишки в процессе чтения, в компании таких же сверстников, будут вырабатывать очень нужную и важную привычку- любить Книги. Мы покажем, что чтение может быть интересным и захватывающим и вместе окунёмся в мир художественной и познавательной литературы.</h6>
+            </div>       
+            <a class="about__more-info button" href="#">Узнать больше</a>     
+         </div>
+         <picture class="about__image">
+            <source data-srcset="./assets/images/logo/logo.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+            <img data-src="./assets/images/logo/logo.png" src="./assets/images/other/plug.png" alt="">
+         </picture>
+      </div>
+   </div>
+</section>
+         <section class="section page__courses courses" id="courses">
+   <picture class="courses__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="courses__container container">
+      <div class="courses__inner">
+         <div class="courses__title title title-center">
+            <h6 class="title__item">Книгочей</h6>
+            <h6 class="title__main">Курс Книгочей</h6>
+            <p class="title__sub">Курс направлен на развитие эрудиции, воображения и словарного запаса, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima tempore assumenda inventore corrupti, minus perspiciatis doloremque quia optio voluptatem delectus neque numquam eveniet, vitae reprehenderit facilis quae molestias facere hic.</p>
+         </div>
+         <div class="courses__cart courses-cart">
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Критическое мышление</h4>
+               <p class="courses-cart__info"></p>              
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Словарный запас</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Воображение</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image"data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Внимание</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Грамотность</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Эрудиция</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Саморазвитие</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Коммуникабельность</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Память</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Нравственность</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+            <div class="courses-cart__column">
+               <picture>
+                  <source class="courses-cart__image" data-srcset="./assets/images/other/background-cart.png" srcset="./assets/images/other/plug.png" type="image/webp">
+                  <img class="courses-cart__image" src="./assets/images/other/plug.png" data-src="./assets/images/other/background-cart.png" alt="cart layer">
+               </picture>
+               <h4 class="courses-cart__title">Кругозор</h4>
+               <p class="courses-cart__info"></p>   
+            </div>
+         </div>
+      </div>  
+   </div>
+</section>
+         <section class="section page__promotions promotions" id="promotions">
+   <picture class="promotions__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="promotions__container container">
+      <div class="promotions__inner">
+         <div class="promotions__title title title-center">
+            <h6 class="title__item">Книгочей</h6>
+            <h2 class="title__main">Акция</h2>
+            <p class="title__sub">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus reprehenderit esse similique, labore animi hic earum, saepe eos, culpa tempora fugiat neque eveniet corrupti delectus ea officia sapiente perspiciatis!
+            </p>
+         </div>   
+         <a class="promotions__button-detail button" href="#">
+            Узнать больше
+         </a>
+      </div>    
+   </div>   
+</section>
+         <section class="section page__features features" id="features">
+   <picture class="features__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="features__container container">
+      <div class="features__inner">
+         <div class="features__title title title-center">
+            <h6 class="title__item">Книгочей</h6>
+            <h2 class="title__main">Наши преимущества</h2>
+            <p class="title__sub">Почему именно с нами хорошо сотрудничать? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptatibus vel voluptatum voluptates ex sint minus ipsum blanditiis, distinctio illo doloremque ducimus. Ab quis eum quod? Autem illum alias fugit.</p> 
+         </div>
+         <div class="features__cart features-cart">
+            <div class="features-cart__column">
+               <img class='features-cart__image' src="./assets/images/icons/kinder.png" alt="features 1">
+               <h4 class="features-cart__title">Фича 1</h4>
+               <p class="features-cart__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus magnam maxime quis perspiciatis quo temporibus beatae maiores quas incidunt</p>     
+            </div>
+            <div class="features-cart__column">
+               <img class='features-cart__image' src="./assets/images/icons/kinder.png" alt="features 2">
+               <h4 class="features-cart__title">Фича 2</h4>
+               <p class="features-cart__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus magnam maxime quis perspiciatis quo temporibus beatae maiores quas incidunt</p>  
+            </div>
+            <div class="features-cart__column">
+               <img class='features-cart__image' src="./assets/images/icons/kinder.png" alt="features 3">
+               <h4 class="features-cart__title">Фича 3</h4>
+               <p class="features-cart__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque minus magnam maxime quis perspiciatis quo temporibus beatae maiores quas incidunt</p>  
+            </div>
+         </div>                
+      </div>     
+   </div>  
+</section>
+
+         <section class="section page__numeral numeral" id="numeral">
+   <picture class="numeral__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="numeral__container container">
+      <div class="numeral__inner">
+         <div class="numeral__title title title-center">
+            <h6 class="title__item">Книгочей</h6>
+            <h2 class="title__main">Наши цифры</h2>
+            <p class="title__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio est dolore voluptatibus, porro magni quas ipsam labore? Saepe amet repellat, ea tempora, aperiam voluptates numquam suscipit molestias impedit maxime qui?</p>
+         </div>
+         <div class="numeral__columns numeral-columns">
+            <div class="numeral-columns__item">
+               <span class="numeral-columns__value">200</span>
+               <span class="numeral-columns__index">Выпускников школы</span>
+            </div>
+            <div class="numeral-columns__item">
+               <span class="numeral-columns__value">1</span>
+               <span class="numeral-columns__index">Школа</span>
+            </div>
+            <div class="numeral-columns__item">
+               <span class="numeral-columns__value">7</span>
+               <span class="numeral-columns__index">лет опыта</span>
+            </div>
+            <div class="numeral-columns__item">
+               <span class="numeral-columns__value">20</span>
+               <span class="numeral-columns__index">инструментов развития</span>
+            </div>
+         </div>
+      </div>    
+   </div> 
+</section>
+         <section class="section page__questions questions" id="questions">
+   <picture class="questions__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="questions__container container">
+      <div class="questions__inner">
+         <div class="questions__section-title title title-center">
+            <h6 class="title__item">Книгочей</h6>
+            <h3 class="title__main">Вопрос - ответ</h3>
+            <p class="title__sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit hic, sit ducimus optio nisi minima deleniti quia, aperiam perferendis, omnis voluptatum debitis corporis eligendi rem sint ea nihil natus. Voluptate.</p>
+         </div>
+         <ul class="questions__items">
+            <li class="questions__item" data-item-question>
+               <div class="questions__header">
+                  <h5 class="questions__title">Вопрос 1</h5>  
+                  <button class="questions__button-detail"></button>
+               </div>
+               <div class="questions__answer" data-question-answer>
+                  <p class="questions__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Impedit, dolore. Molestiae labore ipsam dolorem quae sed consequatur totam, 
+                     porro tempore eveniet ab, 
+                     temporibus optio, quasi corrupti fugiat nihil voluptatibus rerum!
+                  </p>
+               </div>
+            </li> 
+            <li class="questions__item" data-item-question>
+               <div class="questions__header">
+                  <h5 class="questions__title">Вопрос 2</h5>  
+                  <button class="questions__button-detail"></button>
+               </div>
+               <div class="questions__answer" data-question-answer>
+                  <p class="questions__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Impedit, dolore. Molestiae labore ipsam dolorem quae sed consequatur totam, 
+                     porro tempore eveniet ab, 
+                     temporibus optio, quasi corrupti fugiat nihil voluptatibus rerum!
+                  </p>
+               </div>
+            </li> 
+            <li class="questions__item" data-item-question>
+               <div class="questions__header">
+                  <h5 class="questions__title">Вопрос 3</h5>  
+                  <button class="questions__button-detail"></button>
+               </div>
+               <div class="questions__answer" data-question-answer>
+                  <p class="questions__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Impedit, dolore. Molestiae labore ipsam dolorem quae sed consequatur totam, 
+                     porro tempore eveniet ab, 
+                     temporibus optio, quasi corrupti fugiat nihil voluptatibus rerum!
+                  </p>
+               </div>
+            </li> 
+            <li class="questions__item" data-item-question>
+               <div class="questions__header">
+                  <h5 class="questions__title">Вопрос 4</h5>  
+                  <button class="questions__button-detail"></button>
+               </div>
+               <div class="questions__answer" data-question-answer>
+                  <p class="questions__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Impedit, dolore. Molestiae labore ipsam dolorem quae sed consequatur totam, 
+                     porro tempore eveniet ab
+                  </p>
+               </div>
+            </li> 
+            <li class="questions__item" data-item-question>
+               <div class="questions__header">
+                  <h5 class="questions__title">Вопрос 5</h5>  
+                  <button class="questions__button-detail"></button>
+               </div>
+               <div class="questions__answer" data-question-answer>
+                  <p class="questions__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Impedit, dolore. Molestiae labore ipsam dolorem quae sed consequatur totam, 
+                     porro tempore eveniet ab, 
+                     temporibus optio, quasi corrupti fugiat nihil voluptatibus rerum!
+                  </p>
+               </div>
+            </li> 
+            <li class="questions__item" data-item-question>
+               <div class="questions__header">
+                  <h5 class="questions__title">Вопрос 6</h5>  
+                  <button class="questions__button-detail"></button>
+               </div>
+               <div class="questions__answer" data-question-answer>
+                  <p class="questions__text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                     Impedit, dolore. Molestiae labore ipsam dolorem quae sed consequatur totam, 
+                     porro tempore eveniet ab, 
+                     temporibus optio, quasi corrupti fugiat nihil voluptatibus rerum!
+                  </p>
+               </div>
+            </li> 
+         </ul>   
+      </div>
+   </div> 
+</section>
+         <section class="section page__form form" id="form">
+   <picture class="form__cover cover">
+      <source data-srcset="./assets/images/cover/layer.webp" srcset="./assets/images/other/plug.png" type="image/webp">
+      <img data-src="./assets/images/cover/layer.jpeg" src="./assets/images/other/plug.png" alt="welcome cover">
+   </picture>
+   <div class="form__container container">
+      <div class="form__inner">
+         <div class="form__title title title-center">
+            <div class="title__item">
+               Книгочей
+            </div>
+            <h2 class="title__main">
+               Задать вопрос
+            </h2>
+            <p class="title__sub">
+               Возник вопрос? Можете задать его прямо сейчас и сегодня же получить на него ответ
+            </p>
+         </div>
+         <form class="form__question-fields user-form" method="POST">
+               <input class='form__name user-form__field' type="text" placeholder="Ваше имя">
+               <input class='form__email user-form__field' type="email" placeholder="Электронная почта">
+               <textarea class="form__message user-form__field" type="text" placeholder="Ваше обращение"></textarea>  
+               <button class="form__button form__button--submit button user-form__button" type="submit">
+                  <span>Отправить</span>
+               </button>
+         </form> 
+      </div>  
+   </div>  
+</section>
+      </main>
+      <div class="popap popap__sign-up-course sign-up-course" data-popap = 'sign-up-course'>
+   <div class="sign-up-course__container container popap__container">
+      <div class="sign-up-course__inner popap__inner">
+         <div class="sign-up-course__content popap__content">
+            <div class="sign-up-course__title popap__title title">
+               <h6 class="title__item">Книгочей</h6>
+               <h3 class="title__main">Записаться на курс</h3>
+               <p class="title__sub">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias illum impedit voluptatum totam animi hic, neque assumenda ducimus fuga veniam dolore consequatur iste, officia voluptatem beatae, blanditiis id doloremque esse?
+               </p>
+            </div>
+            <form class="sign-up-course__form user-form" method="post">
+               <input class='sign-up-course__name user-form__field' type="text" placeholder="Ваше имя">
+               <input class='sign-up-course__email user-form__field' type="email" placeholder="Электронная почта">
+               <input class='sign-up-course__tel user-form__field' type="number" placeholder="Номер телефона">
+               <button class="sign-up-course__button sign-up-course__button--submit button user-form__button" type="submit">
+                  <span>Записаться</span>
+               </button>
+            </form>
+            <button class="sign-up-course__popap-close popap__button-close" data-popap-closeclick = 'sign-up-course'>
+               <span>Вернуться на сайт</span>
+            </button>
+         </div>
+      </div>
+   </div>
+</div>
+   </div>
+<script src="assets/js/script.min.js"></script>
+</body>
+</html>
